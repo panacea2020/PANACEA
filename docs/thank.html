@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning from COVID-19</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+
+    .homebackground {
+      background-image: url('./pictures/background/home.webp');
+      overflow: hidden;
+    }
+
+    .maintopic {
+      margin-top: 150px;
+      color: white;
+      font-size: 65px;
+      text-align: left;
+    }
+
+    .topic {
+      margin-top: 10px;
+      color: white;
+      font-size: 35px;
+      text-align: left;
+    }
+
+    .jumpbutton {
+      background-color: rgba(43, 43, 43, 0.9);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .maintitle {
+      margin-top: 10px;
+      color: black;
+      font-size: 35px;
+      text-align: left;
+    }
+
+    .maintext {
+      color: rgb(107, 107, 107);
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .background1 {
+      background-color: rgba(76, 83, 82, 0.2)
+    }
+
+    .toptopic {
+      width: 100%;
+      background-color: black;
+    }
+
+    .navbarbutton {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .backgroundlayer {
+      margin-top: 50px;
+      margin-left: 15%;
+      width: 70%;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top toptopic">
+    <div class="col-xs-3">
+      <div style="height: 10px;"></div>
+      <img src="./pictures/background/covid.jpg" alt="covid" style="width:150px">
+    </div>
+    <div class="col-xs-9">
+      <div style="height: 10px;"></div>
+      <button class="navbarbutton" onclick="window.location.href='./index.html'">Home</button>
+      <button class="navbarbutton" onclick="window.location.href='./about.html'">About</button>
+      <button class="navbarbutton" onclick="window.location.href='./team.html'">Our team</button>
+      <button class="navbarbutton" onclick="window.location.href='./news.html'">News</button>
+      <button class="navbarbutton" onclick="window.location.href='./publications.html'">Publications</button>
+      <button class="navbarbutton" onclick="window.location.href='./contact.html'">Contact us</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+
+  <div class="homebackground col-xs-12">
+    <div style="margin-left:200px; max-width: 800px;">
+      <p class="maintopic">Contact us</p>
+    </div>
+  </div>
+
+  <div class="backgroundlayer">
+    Thanks! We will contact you soon
+  </div>
+
+  <div class="w3-bottom w3-container w3-grey w3-center w3-opacity">
+    <h5 class="w3-margin">© 2021 Copyright</h5>
+  </div>
+
+  <script type="text/javascript">
+    function scrollto(element) {
+      console.log(3);
+      // get the element on the page related to the button
+      var scrollToId = element.getAttribute("data-scroll");
+      document.getElementById(scrollToId).scrollIntoView({ block: "end", behavior: "smooth" });
+      console.log(scrollToId);
+    }
+  </script>
+
+</body>
+
+</html>

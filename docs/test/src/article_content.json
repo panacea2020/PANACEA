@@ -1,0 +1,20 @@
+{
+  "article 1": {
+    "title": "Title 1",
+    "source": "bbc",
+    "type": "General",
+    "content": "Article Content. e.g. The main symptoms of coronavirus (COVID-19) are a high temperature, a new, continuous cough and a loss or change to your sense of smell or taste. To help stop the spread of coronavirus (COVID-19), avoid close contact with anyone you do not live with and wash your hands regularly..."
+  },
+  "article 2": {
+    "title": "Title 2",
+    "source": "bbc",
+    "type": "General",
+    "content": "bbbbb"
+  },
+  "article 3": {
+    "title": "Title 3",
+    "source": "bbc",
+    "type": "Scientific",
+    "content": "ccccc"
+  }
+}

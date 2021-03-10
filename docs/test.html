@@ -1,0 +1,82 @@
+<head>
+    <style>
+        [v-clock]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- {{}} and v-clock 有网络延迟的时候：显示的内容-->
+    <div id="app" v-clock>
+        <!-- {{}} and v-once：只渲染一次，数据更新不引起页面更新，目的是优化页面性能 -->
+        <h1 v-once>
+            {{a*a}}
+        </h1>
+
+        <button @click="add">plus 1</button>
+
+        <!-- v-if and v-show -->
+        <p v-if="!boo">test dom</p>
+        <p v-if="a>=1 && boo<=5">test dom 1</p>
+        <p v-else-if="a>=5 && boo<=10">test dom 2</p>
+        <p v-else="a>10">test dom 3</p>
+
+        <!-- v-for -->
+        <ul>
+            <li v-for="(item, index) in arr" :key="index">{{index}}--{{item}}</li>
+        </ul>
+
+        <table>
+            <tr v-for="(item,index) in arr">
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.height}}</td>
+            </tr>
+        </table>
+
+        <!-- {{}} and v-html and v-text -->
+        
+        <!-- {{}} and v-bind（v-bind:可以简写为:）:可改属性值 （此处还用到了拼参）, 可以用来改class(要用大括号包裹) -->
+        <div : class="{red:a>=5, pink:a>=10}">
+            <img v-bind:src="'images/'+url+'.jpg'" alt="">
+            <p :style="{width:b+'px'}">{{a}}</p>
+        </div>
+
+        <!-- {{}} and v-model 双向绑定 -->
+        <p>
+            name: <input type="text" vmodel="val">
+            {{val}}
+        </p>
+
+    </div>
+    <script src="./Tools/vue.js"></script>
+    <script>
+        new Vue({
+            //挂载点
+            el: "#app",
+            data: {
+                a: 0,
+                boo: false,
+                arr: ["a", "b", "c"],
+                dic: { name: "abc", age: "17", height: "175", },
+                arrs: [
+                    { name: "abc", age: "17", height: "175", },
+                    { name: "abc", age: "17", height: "175", },
+                    { name: "abc", age: "17", height: "175", },
+                ],
+                val: "name is "
+            },
+            //and v-on: 具体指令放在methods里 
+            //js原生指令（不能和vue混用）：onclick, ondblclick, onmouseenter鼠标移上, 
+            //onmouseleave鼠标离开, onblur失去焦点, onfocus聚焦
+            methods: {
+                add() {
+                    this.a++
+                },
+                minus() {
+                    this.a--
+                }
+            },
+        })
+    </script>
+</body>
