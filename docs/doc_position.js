@@ -17,7 +17,7 @@ var option = {
         trigger: 'item'
     },
     legend: {
-        top: '5%',
+        top: '0%',
         left: 'center'
     },
     series: [
@@ -46,10 +46,10 @@ var option = {
                 show: false
             },
             data: [
-                { value: 18, name: 'Disgree' },
-                { value: 5, name: 'Discuss' },
-                { value: 78, name: 'Agree' },
-            ]
+                { value: 78, name: 'Contradict', itemStyle:{color:"#C24641"}},
+                { value: 5, name: 'Neutral', itemStyle:{color:"#E8A317"}},
+                { value: 18, name: 'Support', itemStyle:{color:"#4E9258"}},
+            ],
         }
     ]
 };

@@ -40,7 +40,7 @@
       background-image: url('./pictures/background/fog.jpg');
       background-size: 100%;
       height: 30vh;
-      min-height: 200px;
+      min-height: 250px;
       overflow: hidden;
     }
 
@@ -59,16 +59,16 @@
     }
 
     .jumpbutton {
-      background-color: rgba(43, 43, 43, 0.9);
+      background-color: rgb(224, 224, 224);
       border: none;
       color: white;
-      padding: 1vh 2vw;
+      padding: 0;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       margin: 0;
-      width: 12vw;
+      width: 20px;
       cursor: pointer;
     }
 
@@ -107,13 +107,21 @@
       cursor: pointer;
     }
 
+    .search_container {
+      background-color: rgb(224, 224, 224);
+      margin-left: 15%;
+      border: none;
+      width: 45vw;
+      border-radius: 5px;
+    }
+
     .fillmessage {
       background-color: rgb(224, 224, 224);
-      margin-left: 10%;
-      margin-bottom: 5%;
-      border: none;
       min-height: 25px;
-      width: 37%;
+      width: 40vw;
+      border: none;
+      background-color: rgb(224, 224, 224);
+      border-radius: 5px;
     }
 
     .middle_box {
@@ -130,23 +138,22 @@
     }
 
     .sourcebutton {
-      background-color: rgb(138, 136, 136);
-      width: 100%;
+      color: rgb(138, 136, 136);
       margin-left: 0px;
       border: none;
-      padding: 10px 32px;
-      color: white;
+      padding: 8px 32px;
       text-align: center;
-      font-size: 12px;
+      font-size: 15px;
       cursor: pointer;
     }
 
     .resulttitle {
-      font-size: 25px;
+      font-size: 20px;
       background-color: white;
       color: rgb(107, 107, 107);
       border: none;
       margin-top: 5px;
+      text-align: left;
     }
 
     .resulttext {
@@ -159,7 +166,9 @@
       text-align: right;
       color: rgb(107, 107, 107);
       margin-top: 10px;
-    } 
+      
+      border-radius: 5px;
+    }
   </style>
 </head>
 
@@ -171,7 +180,9 @@
   <div class="w3-top toptopic">
     <div class="col-xs-2">
       <div style="height: 10px;"></div>
-      <img src="./pictures/background/covid.jpg" alt="covid" style="width:120px">
+      <!-- <img src="./pictures/background/logo.jpg" alt="covid" style="width:180px"> -->
+      <b style="color: rgb(219, 219, 219); font-size: 35px; height: 40px; margin-left: 10px;">PANACEA</b>
+      <div style="height: 2px;"></div>
     </div>
     <div class="col-xs-10">
       <div style="height: 10px;"></div>
@@ -210,16 +221,36 @@
 
     <div class="col-xs-12" style="width: 64vw; margin-left: 18vw; margin-top: max(10vh,100px);">
       <form name="form1" action="result.html" method="get">
-        <input class="fillmessage" type="text" style="width: 40vw;" name="query"
-          placeholder="Enter another fact to be checked" id="input_query">
-        <button class="jumpbutton" data-scroll="introduction" style="margin-left: 2vw; "
-          onclick="GetQuery()">CHECK</button>
+        <div class="search_container" style="height: 30px; padding: 0;">
+          <input class="fillmessage" type="text" name="query"
+            placeholder="Checking: The COVID-19 virus cannot spread in areas sprayed with eucalyptus oil vapor."
+            id="input_query">
+          <button class="jumpbutton" data-scroll="introduction" onclick="GetQuery()"><img
+              src="./pictures/logo/cross.png" style="width:20px"></button>
+          <div style="display: inline; color: rgba(128, 128, 128, 0.438); margin-right: 0.8vw;">|</div>
+          <button class="jumpbutton" data-scroll="introduction" onclick="GetQuery()"><img
+              src="./pictures/logo/search.png" style="width:20px; opacity: 50%;"></button>
+        </div>
       </form>
 
-      <form name="form1" action="result.html" method="get">
+      <!-- Enter another fact to be checked
+      <form name="form1" action="result_article.html" method="get">
         <p class="topic" id="show_query" style="font-size: 30px; margin-top: -2vh;">Claim: </p>
-      </form>
+      </form> -->
     </div>
+
+    <div class="col-xs-12" style="width: 60%; margin-left: 20%;">
+      <div class="col-xs-4">
+      </div>
+      <div class="col-xs-4">
+        <p class="topic" style="color: rgb(170, 57, 29); font-size: 45px; margin-top: 0;"> 8% </p>
+        <p class="topic" style="color: rgb(170, 57, 29); font-size: 20px;">Agreement Score</p>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+
 
   </div>
 
@@ -227,7 +258,12 @@
 
 
   <!-- Result Summary -->
-  <div class="col-xs-12" style="background-color: rgba(99, 95, 89, 0.048);">
+  <div class="col-xs-12" style="background-color: rgba(99, 95, 89, 0.048); margin-left: 0px; padding: 0; border: none;">
+
+
+
+
+    <!-- <div class="col-xs-12" style="background-color: rgba(99, 95, 89, 0.048);">
     <div class="col-xs-12" style="width: 60%; margin-left: 20%;">
       <div class="col-xs-4">
 
@@ -258,55 +294,141 @@
         <button class="sourcebutton" style="border-radius: 0 5px 5px 0;">LOW FACTUALITY</button>
       </div>
 
-    </div>
+    </div> -->
 
     <!-- Result Details -->
-    <div class="col-xs-12" style="width: 70%; margin-left: 15%; margin-top: 50px; margin-bottom: 200px;">
-
-      <div class="col-xs-12"
-        style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
-        <div class="col-xs-9">
-          <button class="resulttitle" data-toggle="modal" data-target="#articlemodal"><b>Article Title</b></button>
-          <p class="resulttext" style="margin-top: 10px;">Article Content. e.g. The main symptoms of coronavirus
-            (COVID-19) are a high
-            temperature, a
-            new, continuous cough and a loss or change to your sense of smell or taste.
-            To help stop the spread of coronavirus (COVID-19), avoid close contact with anyone you do not live with and
-            wash your hands regularly...
-          </p>
-        </div>
-        <div class="col-xs-3">
-          <p class="resultsource">General Article</p>
-          <p class="resultsource">Source: BBC</p>
-          <p class="resultsource"><span style="color: rgb(5, 167, 59)">29%</span> / <span
-              style="color: rgb(168, 170, 29)">18%</span> / <span style="color: rgb(170, 7, 7)">20%</span></p>
-        </div>
+    <div class="col-xs-12" style="padding: 0; margin-top: 50px;">
+      <div class="col-xs-1" style="padding: 0;">
+        <p style="font-size: 20px; margin-left: 6px;">Sort by: </p>
+        <button class="sourcebutton" style="border-radius: 0 15px 15px 0; margin-top: 10px;">Article</button>
+        <button class="sourcebutton"
+          style="border-radius: 0 15px 15px 0; margin-top: 20px; background-color: rgba(99, 95, 89, 0);">Sentence</button>
       </div>
 
-      <div class="col-xs-12"
-        style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
-        <div class="col-xs-9">
-          <button class="resulttitle" data-toggle="modal" data-target="#articlemodal"><b>Article Title</b></button>
-          <p class="resulttext" style="margin-top: 10px;">Article Content. e.g. The main symptoms of coronavirus
-            (COVID-19) are a high
-            temperature, a
-            new, continuous cough and a loss or change to your sense of smell or taste.
-            To help stop the spread of coronavirus (COVID-19), avoid close contact with anyone you do not live with and
-            wash your hands regularly...
-          </p>
+      <div class="col-xs-10" style="width: 70%; margin-left: 8%; margin-top: 0px; margin-bottom: 200px;">
+        <div class="col-xs-12"
+          style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
+          <div class="col-xs-9">
+            <button class="resulttitle">
+              <a href="./about.html">
+                <b> The results of another laboratory study suggest that a commercial blend of essential oils might help
+                  reduce the activity of one type of flu virus.</b>
+              </a>
+            </button>
+            <p class="resulttext" style="margin-top: 10px;">
+              ...
+              The results of another laboratory study suggest that a commercial blend of essential oils might help
+              reduce
+              the activity of one type of flu virus. This product, sold as doTERRA On Guard , contains the essential
+              oils
+              of wild orange peel, clove bud, cinnamon leaf, cinnamon bark, eucalyptus leaves, and rosemary.
+              ...
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px; border-color: grey;">Article</span></div>
+            
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Source: Medical News Today</span></div>
+
+            <!-- 
+              <p class="resultsource"><span style="color: rgb(5, 167, 59)">29%</span> / <span style="color: rgb(168, 170, 29)">18%</span> / <span style="color: rgb(170, 7, 7)">20%</span></p> 
+            -->
+          </div>
         </div>
-        <div class="col-xs-3">
-          <p class="resultsource">Scientific Article</p>
-          <p class="resultsource">Source: BBC</p>
-          <!-- 
+
+        <div class="col-xs-12"
+          style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
+          <div class="col-xs-9">
+            <button class="resulttitle">
+              <a href="./about.html">
+                <b> Verdict: False There is no scientific evidence that eucalyptus vapor can prevent people from
+                  contracting the new coronavirus.</b>
+              </a>
+            </button>
+            <p class="resulttext" style="margin-top: 10px;">
+              ...
+              1:58 PM 04/17/2020 Brad Sylvester | Fact Check Reporter share on facebook tweet this show comments A post
+              shared on Facebook claims that the COVID-19 virus cannot spread in areas sprayed with eucalyptus oil
+              vapor.
+              Verdict: False There is no scientific evidence that eucalyptus vapor can prevent people from contracting
+              the
+              new coronavirus. No mention of such research appears on the University of Havana website.
+              ...
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Article</span></div>
+            
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Source: CHECK YOUR FACT</span></div>
+
+            <!-- 
+              <p class="resultsource"><span style="color: rgb(5, 167, 59)">29%</span> / <span style="color: rgb(168, 170, 29)">18%</span> / <span style="color: rgb(170, 7, 7)">20%</span></p> 
+            -->
+          </div>
+        </div>
+
+        <div class="col-xs-12"
+          style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
+          <div class="col-xs-9">
+            <button class="resulttitle">
+              <a href="./about.html">
+                <b> FACT CHECK: Does Eucalyptus Vapor Prevent COVID-19?</b>
+              </a>
+            </button>
+            <p class="resulttext" style="margin-top: 10px;">
+              ...
+              Fact Check Reporter share on facebook tweet this show comments A post shared on Facebook claims that the
+              COVID-19
+              virus cannot spread in areas sprayed with eucalyptus oil vapor. Verdict: False There is no scientific
+              evidence that eucalyptus vapor can prevent people from contracting the new coronavirus.
+              ...
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Article</span></div>
+            
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Source: CHECK YOUR FACT</span></div>
+            <!-- 
             <p class="resultsource"><span style="color: rgb(5, 167, 59)">29%</span> / <span style="color: rgb(168, 170, 29)">18%</span> / <span style="color: rgb(170, 7, 7)">20%</span></p> 
           -->
+          </div>
         </div>
+
+        <div class="col-xs-12"
+          style="background-color: white; border-color: rgba(128, 128, 128, 0.411); border-style: solid;">
+          <div class="col-xs-9">
+            <button class="resulttitle">
+              <a href="./about.html">
+                <b> However, these findings do not confirm that any essential oil can cure or treat flu or any other
+                  type of virus.</b>
+              </a>
+            </button>
+            <p class="resulttext" style="margin-top: 10px;">
+              ...
+              This product, sold as doTERRA On Guard , contains the essential oils of wild orange peel, clove bud,
+              cinnamon leaf, cinnamon bark, eucalyptus leaves, and rosemary. However, these findings do not confirm that
+              any essential oil can cure or treat flu or any other type of virus. For more information and resources to
+              help keep you and your loved ones healthy this flu season, visit our dedicated hub .
+              ...
+            </p>
+          </div>
+          <div class="col-xs-3">
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Article</span></div>
+            
+            <div class="resultsource"><span style="background-color:rgba(173, 173, 173, 0.20); border-radius: 5px;">Source: Medical News Today</span></div>
+
+            <!-- 
+          <p class="resultsource"><span style="color: rgb(5, 167, 59)">29%</span> / <span style="color: rgb(168, 170, 29)">18%</span> / <span style="color: rgb(170, 7, 7)">20%</span></p> 
+        -->
+          </div>
+        </div>
+
+
+
       </div>
-
-
     </div>
   </div>
+
 
 
 
@@ -314,14 +436,16 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="resulttext" style="font-size: 20px;"><a href="https://www.bbc.co.uk/news"><span>Article Title </span></a> | <span
-              style="color:teal">Source</span></h5>
+          <h5 class="resulttext" style="font-size: 20px;"><a href="https://www.bbc.co.uk/news"><span>Article Title
+              </span></a> | <span style="color:teal">Source</span></h5>
         </div>
         <div class="modal-body col-xs-12">
           <div class="col-xs-4">
             <!-- inputed claim to be checked -->
             <form name="form1" action="result.html" method="get" style="height: 3vw;">
-              <p id="show_query_modal" style="font-size: 20px; text-align: center;">Claim: </p>
+              <p id="show_query_modal" style="font-size: 20px; text-align: center;">Results for: The results of another
+                laboratory study suggest that a commercial blend of essential oils might help reduce the activity of one
+                type of flu virus.</p>
             </form>
 
             <!-- relation of claim to doc -->

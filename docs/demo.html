@@ -144,7 +144,9 @@
   <div class="w3-top toptopic">
     <div class="col-xs-2">
       <div style="height: 10px;"></div>
-      <img src="./pictures/background/covid.jpg" alt="covid" style="width:120px">
+      <!-- <img src="./pictures/background/logo.jpg" alt="covid" style="width:180px"> -->
+      <b style="color: rgb(219, 219, 219); font-size: 35px; height: 40px; margin-left: 10px;">PANACEA</b>
+      <div style="height: 2px;"></div>
     </div>
     <div class="col-xs-10">
       <div style="height: 10px;"></div>
@@ -187,7 +189,7 @@
       <p class="topic" style="font-size: 18px; margin-left: 230px; margin-top: 0px; margin-bottom: 50px;">PANdemic Ai Claim vEracity Assessment</p>
       <p class="topic" style="font-size: 20px; margin-left: 80px; margin-top: 30px;"></p>
       
-      <form name="form1" action="result.html" method="get">
+      <form name="form1" action="result_article.html" method="get">
         <input class="fillmessage" type="text" style="width: 80%;" name="query" placeholder="Enter a fact to be checked"
           id="input_query">
         <button class="jumpbutton" data-scroll="introduction" style="margin-left: 300px;"
@@ -213,7 +215,7 @@
 
     function GetQuery() {
       var b = document.getElementById('input_query').value,
-        url = './result.html?query=' + encodeURIComponent(b);
+        url = './result_article.html?query=' + encodeURIComponent(b);
       document.location.href = url;
     }
 
