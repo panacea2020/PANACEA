@@ -1,0 +1,107 @@
+{
+  "0": {
+    "id": 0,
+    "score": 8,
+    "title": "The results of another laboratory study suggest that a commercial blend of essential oils might help reduce the activity of one type of flu virus.",
+    "source": "Medical News Today",
+    "sourcelink": "https://www.medicalnewstoday.com/articles/321401",
+    "type": " ",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"The results of another laboratory study suggest that a commercial blend of essential oils might help reduce the activity of one type of flu virus. This product, sold as doTERRA On Guard , contains the essential oils of wild orange peel, clove bud, cinnamon leaf, cinnamon bark, eucalyptus leaves, and rosemary.",
+    "content": [
+      ["The results of another laboratory study suggest that a commercial blend of essential oils might help reduce the activity of one type of flu virus. ", 0.1], 
+      ["This product, sold as doTERRA On Guard , contains the essential oils of wild orange peel, clove bud, cinnamon leaf, cinnamon bark, eucalyptus leaves, and rosemary. ", 0.25], 
+      ["However, these findings do not confirm that any essential oil can cure or treat flu or any other type of virus. ",0.45], 
+      ["For this reason, people should always buy them from reputable sources and use them with caution. There are two basic methods for using essential oils: application to the skin and inhalation. When applying an essential oil to the skin, always mix it with a carrier oil beforehand. Some examples of carrier oils include jojoba oil, olive oil, and nut oil. ", 0.65], 
+      ["For more information and resources to help keep you and your loved ones healthy this flu season, visit our dedicated hub . ", 0.85],
+      ["How to use The Food and Drug Administration (FDA) do not regulate essential oils or their use. ",0.45], 
+      ["After diluting an essential oil, a person can apply it to the skin or add it to lotions and bath products. For inhalation therapy, float the essential oils in hot water and inhale the vapors, or use a room diffuser. Inhaling eucalyptus may help ease congestion. ", 0.65], 
+      ["It is never safe to consume essential oils, and children should not use them in any way. It is best to ask a doctor before using essential oils for any medical purpose. Risks Just because essential oils are natural products, it does not mean that they are harmless. ",0.45], 
+      ["Like medication, they can cause severe side effects if a person uses them improperly or in excessive amounts. Some potential hazards associated with essential oils include: Irritation of the skin or mucous membrane: Infants, young children, older adults, and people with sensitive skin may be more likely to experience skin problems as a result of using essential oils. Poisoning: Never swallow an essential oil, as it may be toxic.", 0.65]],
+    "sentscore":[0.6, 0.2, 0.1]
+  },
+  "1": {
+    "id": 1,
+    "score": 8,
+    "title": "Verdict: False There is no scientific evidence that eucalyptus vapor can prevent people from contracting the new coronavirus.",
+    "source": "CHECK YOUR FACT",
+    "sourcelink": "https://checkyourfact.com/2020/04/17/fact-check-eucalyptus-vapor-prevent-coronavirus/",
+    "type": " ",
+    "stance": [0.63, 0.10, 0.27],
+    "abstract":"1:58 PM 04/17/2020 Brad Sylvester | Fact Check Reporter share on facebook tweet this show comments A post shared on Facebook claims that the COVID-19 virus cannot spread in areas sprayed with eucalyptus oil vapor. Verdict: False There is no scientific evidence that eucalyptus vapor can prevent people from contracting the new coronavirus. No mention of such research appears on the University of Havana website.",
+    "content": ["Article Content. e.g. The main symptomyour sense of not live with and wash your hands regularly...", "wash your hands regularly"],
+    "sentscore":[0.2, 0.1]
+  },
+  "2": {
+    "id": 2,
+    "score": 8,
+    "title": "FACT CHECK: Does Eucalyptus Vapor Prevent COVID-19?",
+    "source": "bbc",
+    "sourcelink": "https://www.bbc.co.uk/news",
+    "type": " ",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"FACT CHECK: Does Eucalyptus Vapor Prevent COVID-19? | Check Your Fact FACT CHECK: Does Eucalyptus Vapor Prevent COVID-19?",
+    "content": ["ccccc", "ddd"],
+    "sentscore":[0.2, 0.1]
+  },
+  "3": {
+    "id": 3,
+    "score": 8,
+    "title": "â€œDoctors of the University of Havana â€“ Cuba confirmed and demonstrated that COVID-19 does not develop in environments where 1,8 Epoxy-p-methane is used, which is the antiviral, antiseptic and Eucalyptol bactericide better know as Eucalyptus in a series of tests in environments sprayed with hot Eucalyptol vapor,â€ claims the post.",
+    "source": "bbc",
+    "sourcelink": "https://www.bbc.co.uk/news",
+    "type": "Scientific",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"One post recently shared on Facebook claims that eucalyptus oil vapor can prevent its spread. â€œDoctors of the University of Havana â€“ Cuba confirmed and demonstrated that COVID-19 does not develop in environments where 1,8 Epoxy-p-methane is used, which is the antiviral, antiseptic and Eucalyptol bactericide better know as Eucalyptus in a series of tests in environments sprayed with hot Eucalyptol vapor,â€ claims the post. â€œDue to the heat of the vapor generated by the vapors, they recommend having branches of eucalyptus in the rooms, or vapors with eucalyptus oil or branches thereof to avoid COVID-19.â€ Eucalyptus is a type of tree native to Australia, and its leaves are often touted online for having medicinal properties.",
+    "content": ["ccccc", "ddd"],
+    "sentscore":[0.2, 0.1]
+  },
+  "4": {
+    "id": 4,
+    "score": 8,
+    "title": "Methane and menthane are totally different compounds.â€ Dr. Warner Green , director for the Center for HIV Cure Research at the Gladstone Institute of Virology and Immunology, confirmed in an email to the DCNF that there is no evidence for eucalyptus vapor, adding, â€œEverybody is looking for something to help themselves and others which breeds these rumors.â€ While some studies have found that eucalyptus oil can help alleviate symptoms of bronchitis and asthma, among other respiratory diseases, there is currently no evidence that it can treat or prevent COVID-19.",
+    "source": "bbc",
+    "sourcelink": "https://www.bbc.co.uk/news",
+    "type": " ",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"That missing â€˜nâ€™ makes a big difference. Methane and menthane are totally different compounds.â€ Dr. Warner Green , director for the Center for HIV Cure Research at the Gladstone Institute of Virology and Immunology, confirmed in an email to the DCNF that there is no evidence for eucalyptus vapor, adding, â€œEverybody is looking for something to help themselves and others which breeds these rumors.â€ While some studies have found that eucalyptus oil can help alleviate symptoms of bronchitis and asthma, among other respiratory diseases, there is currently no evidence that it can treat or prevent COVID-19. Content created by The Daily Caller News Foundation is available without charge to any eligible news publisher that can provide a large audience.",
+    "content": ["ccccc", "ddd"],
+    "sentscore":[0.2, 0.1]
+  },
+  "5": {
+    "id": 5,
+    "score": 8,
+    "title": "However, these findings do not confirm that any essential oil can cure or treat flu or any other type of virus.",
+    "source": "bbc",
+    "sourcelink": "https://www.bbc.co.uk/news",
+    "type": "Scientific",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"This product, sold as doTERRA On Guard , contains the essential oils of wild orange peel, clove bud, cinnamon leaf, cinnamon bark, eucalyptus leaves, and rosemary. However, these findings do not confirm that any essential oil can cure or treat flu or any other type of virus. For more information and resources to help keep you and your loved ones healthy this flu season, visit our dedicated hub .",
+    "content": ["ccccc", "ddd"],
+    "sentscore":[0.2, 0.1]
+  },
+  "6": {
+    "id": 6,
+    "score": 8,
+    "title": "One post recently shared on Facebook claims that eucalyptus oil vapor can prevent its spread.",
+    "source": "bbc",
+    "sourcelink": "https://www.bbc.co.uk/news",
+    "type": "Scientific",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"Fact Check: Social media platforms have become replete with misinformation related to the new coronavirus that causes COVID-19. One post recently shared on Facebook claims that eucalyptus oil vapor can prevent its spread. â€œDoctors of the University of Havana â€“ Cuba confirmed and demonstrated that COVID-19 does not develop in environments where 1,8 Epoxy-p-methane is used, which is the antiviral, antiseptic and Eucalyptol bactericide better know as Eucalyptus in a series of tests in environments sprayed with hot Eucalyptol vapor,â€ claims the post.",
+    "content": ["ccccc", "ddd"],
+    "sentscore":[0.2, 0.1]
+  },
+  "7": {
+    "id": 7,
+    "score": 8,
+    "title": "title sentence to show, some in current example are too long",
+    "source": "source to show: current not available",
+    "sourcelink": "link to source page",
+    "type": "article type",
+    "stance": [0.07, 0.33, 0.60],
+    "abstract":"abstract to show: title sentence to show, some in current example are too long",
+    "content": ["this is the sentence 1 splitted, below is the corresponding sentence score for the highlight color", " sentence 2 here"],
+    "sentscore":[0.2, 0.1]
+  }
+}
