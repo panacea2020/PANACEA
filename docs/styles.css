@@ -27,6 +27,7 @@
 
 .nav-item {
   width: 12%;
+  min-width: 80px;
   text-align: center;
   margin-top: 5px;
 }
